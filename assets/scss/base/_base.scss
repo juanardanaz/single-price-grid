@@ -1,0 +1,37 @@
+/* ========= BASE ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: var(--primary-font);
+    color: var(--very-dark-blue);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ========= BUTTONS ========= */
+.button {
+    display: inline-block;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    padding: .95rem 3.8rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--very-dark-blue);
+    }
+}
