@@ -1,0 +1,100 @@
+/* ========= CARD ========= */
+.card {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: grid;
+
+    &_container {
+        position: relative;
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        place-content: center;
+    }
+
+    &_first_content {
+        background-color: var(--white);
+        padding: 1.4rem 1.2rem;
+    }
+
+    &_title {
+        color: var(--cyan);
+        font-size: 1.3rem;
+        font-weight: var(--font-bold);
+    }
+
+    &_subtitle {
+        color: var(--bright-yellow);
+        font-size: var(--normal-font-size);
+    }
+
+    &_description {
+        font-size: var(--medium-font-size);
+        line-height: 1.6;
+    }
+
+    &_suscription {
+        display: grid;
+        gap: .5rem;
+        background-color: var(--cyan);
+        color: var(--light-gray);
+        padding: 1.4rem 1.2rem;
+    }
+
+    &_suscription_title {
+        font-size: var(--normal-font-size);
+        margin-bottom: 1rem;
+    }
+
+    &_suscription_price {
+        display: flex;
+        gap: .8rem;
+        align-items: center;
+    }
+
+    &_suscription_number {
+        font-size: 2rem;
+    }
+
+    &_suscription_month {
+        opacity: 50%;
+        font-weight: var(--font-regular);
+    }
+
+    &_suscription_description {
+        margin-bottom: 1rem;
+        font-size: var(--medium-font-size);
+    }
+
+    &_suscription_button {
+        -webkit-box-shadow: -1px 5px 16px -1px rgba(0,0,0,0.21);
+        -moz-box-shadow: -1px 5px 16px -1px rgba(0,0,0,0.21);
+        box-shadow: -1px 5px 16px -1px rgba(0,0,0,0.21);
+    }
+
+    &_information {
+        background-color: var(--light-cyan);
+        color: var(--light-gray);
+        padding: 1.4rem 1.2rem;
+    }
+
+    &_information_title {
+        font-size: var(--normal-font-size);
+    }
+
+    &_information_list {
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+
+    &_information_item {
+        font-size: var(--medium-font-size);
+        transition: .4s;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--bright-yellow);
+        }
+    }
+}
