@@ -115,6 +115,8 @@ img {
 .card_first_content {
   background-color: var(--white);
   padding: 1.4rem 1.2rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .card_title {
   color: var(--cyan);
@@ -165,6 +167,8 @@ img {
   background-color: var(--light-cyan);
   color: var(--light-gray);
   padding: 1.4rem 1.2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .card_information_title {
   font-size: var(--normal-font-size);
@@ -216,6 +220,12 @@ img {
   }
   .card_first_content, .card_suscription, .card_information {
     padding: 2.4rem 2.8rem;
+  }
+  .card_suscription {
+    border-bottom-left-radius: 10px;
+  }
+  .card_information {
+    border-bottom-left-radius: 0px;
   }
 }
 @media screen and (min-width: 1440px) {

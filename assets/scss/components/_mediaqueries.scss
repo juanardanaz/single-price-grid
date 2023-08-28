@@ -27,6 +27,14 @@
         &_information {
             padding: 2.4rem 2.8rem;
         }
+
+        &_suscription {
+            border-bottom-left-radius: 10px;
+        }
+
+        &_information {
+            border-bottom-left-radius: 0px;
+        }
     }
 }
 
