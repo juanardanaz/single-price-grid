@@ -6,9 +6,13 @@
 }
 
 body {
-  background-color: var(--cream);
-  font-family: var(--primary-font);
-  color: var(--very-dark-blue);
+  background-color: var(--light-gray);
+  font-family: var(--body-font);
+  color: var(--grayish-blue);
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -23,16 +27,17 @@ img {
 /* ========= BUTTONS ========= */
 .button {
   display: inline-block;
-  background-color: var(--dark-cyan);
-  color: var(--white);
-  padding: 0.95rem 3.8rem;
+  background-color: var(--bright-yellow);
+  color: var(--light-gray);
+  padding: 0.75rem 3.8rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
   transition: 0.4s;
+  text-align: center;
 }
 .button:hover {
   cursor: pointer;
-  background-color: var(--very-dark-blue);
+  background-color: var(--grayish-blue);
 }
 
 /* ========= FONT ========= */
@@ -55,13 +60,16 @@ img {
   /* ========= COLORS ========= */
   /* ========= Primary ========= */
   --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 47%, 52%);
   --bright-yellow: hsl(71, 73%, 54%);
   /* ========= Neutral ========= */
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
   /* ========= FONT and TYPOGRAPHY ========= */
   --body-font: "Karla";
   --normal-font-size: 16px;
+  --medium-font-size: 14px;
   --small-font-size: 12px;
   /* ========= Font Weight ========= */
   --font-regular: normal;
@@ -88,5 +96,145 @@ img {
 
 /* ========= REUSABLE CSS CLASSES ========= */
 .section {
-  padding: 4.5rem 0 2rem;
+  padding: 1.5rem 0 2rem;
+}
+
+/* ========= CARD ========= */
+.card {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  display: grid;
+}
+.card_container {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  place-content: center;
+}
+.card_first_content {
+  background-color: var(--white);
+  padding: 1.4rem 1.2rem;
+}
+.card_title {
+  color: var(--cyan);
+  font-size: 1.3rem;
+  font-weight: var(--font-bold);
+}
+.card_subtitle {
+  color: var(--bright-yellow);
+  font-size: var(--normal-font-size);
+}
+.card_description {
+  font-size: var(--medium-font-size);
+  line-height: 1.6;
+}
+.card_suscription {
+  display: grid;
+  gap: 0.5rem;
+  background-color: var(--cyan);
+  color: var(--light-gray);
+  padding: 1.4rem 1.2rem;
+}
+.card_suscription_title {
+  font-size: var(--normal-font-size);
+  margin-bottom: 1rem;
+}
+.card_suscription_price {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+.card_suscription_number {
+  font-size: 2rem;
+}
+.card_suscription_month {
+  opacity: 50%;
+  font-weight: var(--font-regular);
+}
+.card_suscription_description {
+  margin-bottom: 1rem;
+  font-size: var(--medium-font-size);
+}
+.card_suscription_button {
+  -webkit-box-shadow: -1px 5px 16px -1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: -1px 5px 16px -1px rgba(0, 0, 0, 0.21);
+  box-shadow: -1px 5px 16px -1px rgba(0, 0, 0, 0.21);
+}
+.card_information {
+  background-color: var(--light-cyan);
+  color: var(--light-gray);
+  padding: 1.4rem 1.2rem;
+}
+.card_information_title {
+  font-size: var(--normal-font-size);
+}
+.card_information_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.card_information_item {
+  font-size: var(--medium-font-size);
+  transition: 0.4s;
+}
+.card_information_item:hover {
+  cursor: pointer;
+  color: var(--bright-yellow);
+}
+
+/* ========= FOOTER ========= */
+.footer {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer_link {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ========= MEDIA QUERIES ========= */
+/* For Medium Devices */
+@media screen and (min-width: 576px) {
+  .card {
+    width: 406px;
+    height: auto;
+  }
+}
+/* For Large Devices */
+@media screen and (min-width: 986px) {
+  .card {
+    width: 80%;
+    height: auto;
+  }
+  .card_second_content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .card_container {
+    justify-items: center;
+  }
+  .card_first_content, .card_suscription, .card_information {
+    padding: 2.4rem 2.8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card_container {
+    gap: 2rem;
+  }
+  .card_title {
+    font-size: 1.6rem;
+  }
+  .card_subtitle, .card_suscription_title, .card_information_title {
+    font-size: 1.3rem;
+  }
+  .card_description, .card_suscription_description {
+    font-size: 1.2rem;
+  }
+  .card_information_item {
+    font-size: 1rem;
+  }
+  .card_suscription_number {
+    font-size: 2.5rem;
+  }
 }
