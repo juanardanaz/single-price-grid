@@ -6,9 +6,13 @@
 }
 
 body {
-    background-color: var(--cream);
-    font-family: var(--primary-font);
-    color: var(--very-dark-blue);
+    background-color: var(--light-gray);
+    font-family: var(--body-font);
+    color: var(--grayish-blue);
+}
+
+ul {
+    list-style: none;
 }
 
 a {
@@ -23,15 +27,16 @@ img {
 /* ========= BUTTONS ========= */
 .button {
     display: inline-block;
-    background-color: var(--dark-cyan);
-    color: var(--white);
-    padding: .95rem 3.8rem;
+    background-color: var(--bright-yellow);
+    color: var(--light-gray);
+    padding: .75rem 3.8rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
     transition: .4s;
+    text-align: center;
 
     &:hover{
         cursor: pointer;
-        background-color: var(--very-dark-blue);
+        background-color: var(--grayish-blue);
     }
 }
