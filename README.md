@@ -39,6 +39,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 - [Lighthouse Reporter Viewer](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es) - Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps.
 - [CSS filter generator](https://codepen.io/sosuke/pen/Pjoqqp) - This helped me to change the color of a SVG element
 - [ScrollReveal](https://scrollrevealjs.org/) - ScrollReveal is a JavaScript library for easily animating elements as they enter/leave the viewport.
+- [CSSMatic](https://www.cssmatic.com/box-shadow) - CSSmatic is a non-profit project, made by developers for developers.
 
 ## Author
 
