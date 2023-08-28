@@ -1,7 +1,6 @@
 /* ========= CARD ========= */
 .card {
     overflow: hidden;
-    border-radius: 0.5rem;
     display: grid;
 
     &_container {
@@ -23,11 +22,23 @@
         color: var(--cyan);
         font-size: 1.3rem;
         font-weight: var(--font-bold);
+        transition: .4s;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--bright-yellow);
+        }
     }
 
     &_subtitle {
         color: var(--bright-yellow);
         font-size: var(--normal-font-size);
+        transition: .4s;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--grayish-blue);
+        }
     }
 
     &_description {
@@ -56,11 +67,23 @@
 
     &_suscription_number {
         font-size: 2rem;
+        transition: .4s;
+
+        &:hover {
+            cursor: pointer;
+            color: var(--bright-yellow);
+        }
     }
 
     &_suscription_month {
         opacity: 50%;
         font-weight: var(--font-regular);
+        transition: .4s;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 100%;
+        }
     }
 
     &_suscription_description {

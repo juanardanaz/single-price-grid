@@ -102,7 +102,6 @@ img {
 /* ========= CARD ========= */
 .card {
   overflow: hidden;
-  border-radius: 0.5rem;
   display: grid;
 }
 .card_container {
@@ -122,10 +121,20 @@ img {
   color: var(--cyan);
   font-size: 1.3rem;
   font-weight: var(--font-bold);
+  transition: 0.4s;
+}
+.card_title:hover {
+  cursor: pointer;
+  color: var(--bright-yellow);
 }
 .card_subtitle {
   color: var(--bright-yellow);
   font-size: var(--normal-font-size);
+  transition: 0.4s;
+}
+.card_subtitle:hover {
+  cursor: pointer;
+  color: var(--grayish-blue);
 }
 .card_description {
   font-size: var(--medium-font-size);
@@ -149,10 +158,20 @@ img {
 }
 .card_suscription_number {
   font-size: 2rem;
+  transition: 0.4s;
+}
+.card_suscription_number:hover {
+  cursor: pointer;
+  color: var(--bright-yellow);
 }
 .card_suscription_month {
   opacity: 50%;
   font-weight: var(--font-regular);
+  transition: 0.4s;
+}
+.card_suscription_month:hover {
+  cursor: pointer;
+  opacity: 100%;
 }
 .card_suscription_description {
   margin-bottom: 1rem;
