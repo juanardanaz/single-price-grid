@@ -8,5 +8,4 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.card`, {origin: 'bottom'});
-sr.reveal(`.card_img`, {delay: 600, origin: 'bottom'});
-sr.reveal(`.card_data`, {delay: 600, origin: 'bottom'});
+sr.reveal(`.footer`, {delay: 600, origin: 'bottom'});
